@@ -1,0 +1,37 @@
+# Local configurations, deployment data and credentials
+config.json
+config.*.local.json
+.env
+.env.*
+!.env.example
+network_config_bundle.json
+deployed_addresses.json
+.network/
+.network-updates/
+.filetrust-updates/
+.bundle-check
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+# Runtime files and development caches
+log/
+logs/
+data/
+backups/
+*.log
+*.log.gz
+*.jsonl
+*.jsonl.gz
+*.bak
+*.bak.*
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+.venv.*/
+.DS_Store

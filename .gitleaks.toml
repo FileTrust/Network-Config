@@ -1,0 +1,11 @@
+title = "FileTrust Explorer publication rules"
+
+[extend]
+useDefault = true
+
+[[rules]]
+id = "filetrust-wallet-key"
+description = "Literal wallet or signing key assignment"
+regex = '''(?i)(?:private[_-]?key|signing[_-]?key|operational[_-]?key)[\s"']{0,4}[:=][\s"'`]{0,4}((?:0x)?[a-f0-9]{64})'''
+secretGroup = 1
+keywords = ["private", "signing", "operational"]
